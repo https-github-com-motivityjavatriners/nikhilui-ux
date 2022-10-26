@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0%;
+        padding: 0%;
+        background-color: red;
+    }
+    h1{
+        align-items: center;
+        background-color: rgb(255, 92, 92);
+        height: 10vh;
+        padding-top: 20px;
+        color: rgb(255, 254, 243);
+    }
+
+    h4{
+        align-items: center;
+        margin-top: 100px;
+        font: 1em sans-serif;
+        height: 5vh;
+        padding-top: 10px;
+        color: rgb(255, 254, 243);
+
+    }
+    img{
+        margin-top: 50px;
+    }
+
+    .container{
+        background-color: rgb(255, 92, 92);
+        width: 75vw;
+        height: 75vh;
+    }
+
+    .container div{
+        display: inline;
+    }
+
+
+    .box{
+        width: 30vw;
+        height: 100vh;
+    }
+
+    .container div div{
+        
+    }
+
+</style>
+<body>
+    
+    <div>
+        <h1>
+        <center>
+                media data
+        </center>
+         </h1>
+
+         <center>
+         <h4>
+            audio
+         </h4>
+        </center>
+        <center>
+
+        <div class="container">
+
+            <div class="box">
+            
+                    <img  src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+                    
+                    <audio controls style="background-color: black; width: 200px;">
+                            <source src="horse.ogg" type="audio/ogg">
+                            <source src="horse.mp3" type="audio/mpeg">
+                                     Your browser does not support the audio tag.
+                   </audio>
+                   
+            </div>
+        
+        
+        <div class="box">
+              
+                  <img  src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+                  <audio controls style="background-color: black; width: 200px;">
+                      <source src="horse.ogg" type="audio/ogg">
+                      <source src="horse.mp3" type="audio/mpeg">
+                      Your browser does not support the audio tag.
+                    </audio>
+      
+        </div>
+
+        <div class="box">
+
+                  <img  src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+                  <audio controls style="background-color: black; width: 200px;">
+                      <source src="horse.ogg" type="audio/ogg">
+                        <source src="horse.mp3" type="audio/mpeg">
+                      Your browser does not support the audio tag.
+                   </audio>
+
+
+             
+
+        </div>
+
+       
+        
+
+        </div>
+        </center>
+
+       
+    
+
+        
+
+    </div>
+
+    <div class="box">
+
+        <div id="hover" onmouseover="hov()"
+    style="background-color:green;height:200px;width:200px;">
+  </div>
+
+    </div>
+    <input id="bg" onkeyup="changeBackground()"
+    placeholder="write something" style="color:#fff">
+
+    
+
+<script>
+   var a = 0;
+    var b = 0;
+    var c = 0;
+    function changeBackground() {
+      var x = document.getElementById('bg');
+      x.style.backgroundColor = 'rgb('+a+', '+b+', '+c+')';
+      a += 1;
+      b += a + 1;
+      c += b + 1;
+      if (a > 255) a = a - b;
+      if (b > 255) b = a;
+      if (c > 255) c = b;
+    }
+
+    function hov() {
+         var e = document.getElementById('hover');
+         e.style.display = 'none';
+      }
+
+      let i=5;
+      let j=10;
+
+      let temp=i;
+      i=j;
+      j=temp;
+
+      console.log(`the value of i is ${a} and the value of j is  ${j}`);
+
+
+</script>
+
+<script src="async_wait.js"></script>
+
+</body>
+</html>
